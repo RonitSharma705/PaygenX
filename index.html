@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PayGenX</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet"
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   </head>
 
   <body>
     <spline-viewer
       url="https://prod.spline.design/G-mFAbu0Sdkc7IRo/scene.splinecode"></spline-viewer>
-    <nav>
-      <div class="logo">PayGen𝕏</div>
-      <div class="hamburger" id="hamburger">&#9776;</div>
-      <div class="nav-links" id="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">Showcase</a>
-        <a href="#">Contact</a>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">PayGen𝕏</div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -28,10 +36,13 @@
       <div class="overlay"></div>
       <div class="content">
         <h1 class="title">
-          COMING SOON
+          <span class="typewriter" id="type-target"></span>
           <br /><span class="gradient-text">PayGen𝕏</span>
         </h1>
-        <p class="subtitle">The most advanced AI-powered Pay</p>
+        <p class="subtitle">Experience the future of payments with intelligent
+          automation, personalized financial insights — From seamless checkouts
+          to smart budgeting tools, our system adapts to your needs and evolves
+          with you.</p>
         <div class="cta-container">
           <button class="cta-btn">
             <span>Explore</span>
@@ -40,34 +51,121 @@
       </div>
     </section>
 
-    <section class="contact-section">
-      <div class="contact-content">
-        <!-- LEFT: Contact Form -->
-        <div class="contact-container">
-          <h2>Contact Us</h2>
-          <p class="contact-intro">
-            Have a question, partnership idea, or just want to say hello?
-            Fill out the form and we'll get back to you soon.
-          </p>
-          <form class="contact-form">
-            <div class="form-group">
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Your Email"
-                required />
-            </div>
-            <textarea name="message" rows="6" placeholder="Your Message"
-              required></textarea>
-            <button type="submit">Send Message</button>
-          </form>
+    <section class="premium-section">
+      <div class="premium-heading">🚀 Coming Soon Features</div>
+      <div class="premium-subtitle">Powerful features, built with intelligence,
+        elegance, and security.</div>
+
+      <!-- Row 1 -->
+      <div class="premium-row">
+        <div class="premium-card">
+          <div class="premium-icon">🤖</div>
+          <div class="premium-title">AI-Powered Management</div>
+          <div class="premium-text">
+            Automate tasks, optimize workflows, and boost team performance with
+            next-gen AI that learns how you work and helps you stay in control —
+            effortlessly.
+          </div>
         </div>
 
-        <!-- RIGHT: 3D Object -->
-        <div class="contact-3d">
-          <spline-viewer
-            url="https://prod.spline.design/M1MO8Uuf7FmHCUxl/scene.splinecode"></spline-viewer>
+        <div class="premium-card">
+          <div class="premium-icon">💳</div>
+          <div class="premium-title">Smart Payments</div>
+          <div class="premium-text">
+            Accept payments securely from around the world. With fraud
+            detection, crypto support, and intelligent billing systems, managing
+            revenue becomes seamless.
+          </div>
         </div>
       </div>
+
+      <!-- Row 2 -->
+      <div class="premium-row">
+        <div class="premium-card">
+          <div class="premium-icon">💬</div>
+          <div class="premium-title">Ask AI</div>
+          <div class="premium-text">
+            Need an answer, a summary, or even help writing code? Just ask. Our
+            AI assistant is built into every screen, ready to work for you in
+            real-time.
+          </div>
+        </div>
+
+        <div class="premium-card">
+          <div class="premium-icon">🔐</div>
+          <div class="premium-title">Secure by Design</div>
+          <div class="premium-text">
+            Your data is safe with enterprise-grade encryption, biometric
+            access, and a zero-trust framework. Privacy and security aren’t
+            features — they’re foundations.
+          </div>
+        </div>
+      </div>
+
     </section>
+
+    <div class="footer-divider"></div>
+
+    <h1 class="ai-section-heading">Roadmap / Phases</h1>
+
+    <div class="ai-container">
+
+      <div class="ai-roadmap-card">
+        <div class="ai-card-content">
+          <h2 class="ai-card-title">Phase 1 – Research & Devlopment</h2>
+          <p class="ai-card-text">We built the foundation. A neural engine
+            designed to learn from your spending habits and act securely,
+            intelligently, and instantly.</p>
+          <p class="ai-card-text">This is the brain behind everything – fast,
+            encrypted, self-learning AI for finance.</p>
+        </div>
+        <img src="https://via.placeholder.com/400x250?text=AI+Core" alt="Step 1"
+          class="ai-card-img">
+      </div>
+
+      <div class="ai-roadmap-card">
+        <div class="ai-card-content">
+          <h2 class="ai-card-title">Phase 2 – AI Integration</h2>
+          <p class="ai-card-text">Your AI-powered assistant arrives. It helps
+            you plan, save, and optimize money in real time based on your life,
+            your rules.</p>
+          <p class="ai-card-text">Copilot understands your needs and responds
+            proactively with smart alerts and financial moves.</p>
+        </div>
+        <img src="https://via.placeholder.com/400x250?text=Copilot" alt="Step 2"
+          class="ai-card-img">
+      </div>
+
+      <div class="ai-roadmap-card">
+        <div class="ai-card-content">
+          <h2 class="ai-card-title">Phase 3 – Payment Integration</h2>
+          <p class="ai-card-text">AI that moves your money with intent. Handles
+            fiat, crypto, rewards — intelligently chooses the best route for
+            each transaction.</p>
+          <p class="ai-card-text">Speed, security, and adaptability — all under
+            one AI-driven payment engine.</p>
+        </div>
+        <img src="https://via.placeholder.com/400x250?text=Payments"
+          alt="Step 3" class="ai-card-img">
+      </div>
+
+      <div class="ai-roadmap-card">
+        <div class="ai-card-content">
+          <h2 class="ai-card-title">Phase 4 – Full Launch</h2>
+          <p class="ai-card-text">This is the future. A full-stack, intelligent
+            finance layer with voice commands, automations, and powerful
+            integrations.</p>
+          <p class="ai-card-text">It’s not just payment — it’s control,
+            prediction, and full-stack personal finance built into one
+            experience.</p>
+        </div>
+        <img src="https://via.placeholder.com/400x250?text=Launch" alt="Step 4"
+          class="ai-card-img">
+      </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
 
     <footer class="footer">
       <div class="footer-container">
@@ -84,8 +182,6 @@
           <div class="left-section social-icons-section">
             <h4>Follow Us</h4>
             <div class="social-icons">
-              <a href="#"><i
-                  class="fab fa-instagram"></i><span>Instagram</span></a>
               <a href="#"><i
                   class="fab fa-x-twitter"></i><span>Twitter</span></a>
               <a href="#"><i
@@ -120,12 +216,13 @@
     </footer>
 
     <!-- Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script type="module"
-      src="https://unpkg.com/@splinetool/viewer@1.10.39/build/spline-viewer.js">
-    </script>
-  </body>
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.10.39/build/spline-viewer.js"></script>
 
+    <script src="script.js"></script>
+  </body>
 </html>
